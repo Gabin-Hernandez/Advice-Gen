@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .body {
+        background-color: hsl(218, 23%, 16%);
+        font-family: "Manrope", sans-serif;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+      .main {
+        border-radius: 10px;
+        background-color: hsl(217, 19%, 24%);
+        width: 50%;
+      }
+      .content {
+        margin: 40px;
+        text-align: center;
+        align-items: center;
+      }
+      .content p {
+        text-align: center;
+        color: hsl(150, 100%, 66%);
+      }
+      .content p:nth-child(2) {
+        text-align: center;
+        color: white;
+        text-align: center;
+      }
+      .button {
+        display: grid;
+        place-content: center;
+        margin-top: 20px;
+        margin-bottom: -80px;
+      }
+      .btn {
+        background-color: hsl(150, 100%, 66%);
+        border: none;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: relative;
+        transition: box-shadow 0.3s ease;
+      }
+
+      /* Efecto de resplandor al hacer hover */
+      .btn:hover {
+        box-shadow: 0 0 20px 10px hsla(150, 100%, 66%, 0.4);
+      }
+      .button img {
+        margin-top: 4px;
+      }
+      @media (max-width: 700px) {
+        .main {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="body">
+    <main class="main">
+      <div class="content">
+        <p class="advice-number">Advice #79<!-- Advice ID goes here --></p>
+        <p class="advice-text">
+          "To succeed in life, you need two things: ignorance and confidence."<!-- Advice text goes here -->"
+        </p>
+        <div>
+          <img src="./images/pattern-divider-mobile.svg" alt="" />
+        </div>
+        <div class="button">
+          <button class="btn">
+            <img src="./images/icon-dice.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <div>
+      <a href="https://github.com/Gabin-Hernandez">Coded by Gabin Hernandez</a>
+    </div>
+    <script src="./fetch.js"></script>
+  </body>
+</html>
